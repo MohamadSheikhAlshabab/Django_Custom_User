@@ -1,0 +1,89 @@
+@import url(https://fonts.googleapis.com/css?family=Droid+Sans:700);
+p{
+    font-size: larger;
+    line-height: 2.5rem;
+}
+a{
+    color: beige;
+}
+a:hover{
+    color: #f77f7f;
+    font-size: larger;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all .1s;
+}
+body{
+background-color: #424242;
+font-family: 'Droid Sans', sans-serif;
+color: #f77f7f;
+}
+.group{
+    text-align: center;
+    margin: 20px auto;
+}
+.group button{
+    margin-top: 10px;
+}
+button{
+/*			box-sizing: border-box;*/
+    background: NONE;
+    border: none;
+    outline: none;
+    border-radius: 3px;
+    padding: 15px 70px;
+    color:white;
+    text-transform: uppercase;
+    font-weight: 700;
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.41);
+    box-shadow: 0 3px 0 0 #383838;
+    border:3px solid transparent;
+    background-color:#00bff0;
+    border-color: #00bff0;
+
+    animation: pulse 1s linear infinite alternate;
+    -webkit-animation: pulse 1s linear infinite alternate;
+}
+.active,
+button:active{
+    background-image: linear-gradient(rgba(0,0,0,.1) 13%, transparent 13%,transparent);
+    box-shadow: 0 1px 0 0 #383838;
+    color: rgba(55,55,55,.91);
+    text-shadow: none;
+    
+    
+    -webkit-animation-play-state: paused; 
+animation-play-state: paused;
+}
+button:focus,
+button:hover{
+    -webkit-animation-play-state: paused; 
+animation-play-state: paused;
+}
+
+
+.login:focus,
+.login:hover{
+    background-color:#0097bd;
+}
+.login{
+    background-color:#00bff0;
+    border-color: #00bff0;
+}
+
+
+@-webkit-keyframes pulse {
+    100% {
+        transform: translateY(6.9px); 
+    } 
+}
+
+@keyframes pulse {
+    100% {
+        transform: translateY(6.9px); 
+    } 
+}
+
